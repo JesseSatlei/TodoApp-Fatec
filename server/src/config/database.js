@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 
-module.exports = mongoose.createConnection('mongodb://localhost/todo');
+var mongoDB = 'mongodb://localhost/todo';
+module.exports = mongoose.connect(mongoDB, { useUnifiedTopology: true, useNewUrlParser: true });
