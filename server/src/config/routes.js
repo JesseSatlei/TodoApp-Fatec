@@ -5,5 +5,8 @@ module.exports = function(server) {
   server.use('/api', router);
 
   const todoService = require('../api/todo/todoService');
-  todoService.register(router, '/todos')
+  todoService.register(router, '/todos');
+
+  const cadastroService = require('../api/cadastro/cadastroService');
+  cadastroService.register(router, '/cadastro');
 }
