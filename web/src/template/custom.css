@@ -7,6 +7,11 @@
   color: #777;
 }
 
+.markedAsNotDone {
+  text-decoration: none;
+  color: #000;
+}
+
 .tableActions {
   width: 105px;
 }
