@@ -4,13 +4,13 @@ import IconButton from '../template/iconButton';
 export default props => {
   const renderRows = () => {
     const list = props.list || [];
-    return list.map(todo => (
-      <tr key={todo._id}>
-        <td>{todo.nome}</td>
-        <td>{todo.data}</td>
+    return list.map(cadastro => (
+      <tr key={cadastro._id}>
+        <td>{cadastro.nome}</td>
+        <td>{cadastro.data}</td>
         <td>
           <IconButton style="danger" icon="trash-o" hide={false}
-            onClick={() => props.handleRemove(todo)} />
+            onClick={() => props.handleRemove(cadastro)} />
         </td>
       </tr>
     ));
