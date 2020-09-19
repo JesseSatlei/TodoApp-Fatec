@@ -14,6 +14,9 @@ export default props => (
             <a href="#/todo">Tarefas</a>
           </li>
           <li>
+            <a href="#/cadastro">Cadastro</a>
+          </li>
+          <li>
             <a href="#/about">Sobre</a>
           </li>
         </ul>
